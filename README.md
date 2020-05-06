@@ -1,6 +1,10 @@
 # blasphemy_script_lang
 Odd interpreted language that is transcribed into Java before execution.
 
+**VERSION-UPDATES**
+- Version 0.1.0: Initial Copy
+- Version 0.1.1: Added function syntax
+
 ## What is this?
 Blasphemy Script (BLSP) has a really basic looking syntax, but some of the functions for outputs make no sense at first. In fact, most files written in BLSP have no real programming language-esque structure aside from the necessity of standard strings ("..."). Although, with how many words are involved, it's obvious this is based on Java.
 
