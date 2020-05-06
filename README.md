@@ -6,7 +6,7 @@ Blasphemy Script (BSP) has a really basic looking syntax, but some of the functi
 
 ## What does it look like?
 Well, for starters, there's the lex.py file if you're curious about what has been defined. Otherwise, below is a demo<br>
-*filename: test.bsp*
+*filename: test.blsp*
 ```
 open singular noret core
 output [ 2 ] >>>
