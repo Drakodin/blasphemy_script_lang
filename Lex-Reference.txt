@@ -1,0 +1,14 @@
+plus = +
+subt = -
+divi = /
+mult = *
+imod = %
+
+num = int
+word = string
+dec = double
+
+output
+
+Ex:
+num{} -> "{}" -> int + [] = int[]
