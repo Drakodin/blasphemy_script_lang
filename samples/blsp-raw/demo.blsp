@@ -1,5 +1,5 @@
-open singular noret core
+open singular noret core startfun
 word words = " # words" >>>
 num a = 2 >>>
 output [ a + words ] >>> <>
-stopcode
+<>
