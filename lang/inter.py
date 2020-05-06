@@ -6,7 +6,7 @@ lex_un = Lex()
 # Outputs are in Java
 def gen_name(in_file):
     base = os.path.basename(in_file)
-    ind = base.index(".bsp")
+    ind = base.index(".blsp")
     name = base[0 : 1].capitalize() + base[1 : ind] + ".java"
     return name
 
@@ -52,7 +52,7 @@ def build_struct(in_file):
 # Checks validity of input file for .bsp extension
 def is_bsp(in_file):
     base = os.path.basename(in_file)
-    if (base.endswith(".bsp")):
+    if (base.endswith(".blsp")):
         return True
     return False
 
