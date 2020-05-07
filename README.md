@@ -1,5 +1,5 @@
 # blasphemy_script_lang
-Odd interpreted language that is transcribed into Java before execution.
+Odd interpreted language that is transcribed into Java before execution. It is read on a token by token basis and thus all files will appear with spaces between all forms of syntax until either I make a regex-based system or a true compiler.
 
 **VERSION-UPDATES**
 - Version 0.1.0: Initial Copy
