@@ -10,8 +10,8 @@ There are resources that are either available now or in development for language
 
 **VERSION-UPDATES**
 - Version 0.1.0: Initial Copy
-- **Version 0.1.1**: Added function syntax
-- *Version 0.1.2*: Command line script for transcribing and compiling on JVM
+- Version 0.1.1: Added function syntax
+- **Version 0.1.2**: Command line script for transcribing and compiling on JVM
 - *Version 0.1.3*: Array structures, improved file recognition, additional lexicon mappings.
 
 **BLSP Resources**
@@ -42,7 +42,14 @@ public class Test
 ## How do I run it
 Feed a file with the extension ".blsp" into the method into the interpreter. Note that the interpreter isn't the best thing in the world and will default to outputting raw text if the BLSP syntax is incorrect.
 
-I'll attach a script later that calls the function since this was not build with any sort of package manager.
+For Windows users: Run the following command from cmd.exe from the "./lang" path 
+
+```python blsp-0.1.2.py <filename.blsp> <keyword>```
+
+There are two operable keywords:
+- ```testcompile```: Generates CLASS file to run on JVM (Make sure the path to java.exe is on your PATH).
+- ```export```: Generates only the Java file.
+
 
 The interpreter accepts either filenames or paths and will export the file to the same directory as the input unless otherwise specified to do so.
 
