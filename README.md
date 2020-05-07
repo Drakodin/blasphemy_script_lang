@@ -12,6 +12,7 @@ There are resources that are either available now or in development for language
 - Version 0.1.0: Initial Copy
 - Version 0.1.1: Added function syntax
 - **Version 0.1.2**: Command line script for transcribing and compiling on JVM
+- *Version 0.1.2.1*: Batch commands that can be attached to Path. Requires that the location of the ```blsp-{version}.py``` be attached to path as "BLSP_MAIN". Attaching the folder containing the ```blsp.bat``` allows for the use of ```blsp <file_arg>``` globally.
 - *Version 0.1.3*: Array structures, improved file recognition, additional lexicon mappings.
 
 **BLSP Resources**
@@ -50,6 +51,9 @@ There are two operable keywords:
 - ```testcompile```: Generates CLASS file to run on JVM (Make sure the path to java.exe is on your PATH).
 - ```export```: Generates only the Java file.
 
+Note that the .blsp file must be in the same directory as ```blsp-0.1.2.py```.
+
+I'm currently working on making a terminal command for Windows (and later Unix-based OS's with bash).
 
 The interpreter accepts either filenames or paths and will export the file to the same directory as the input unless otherwise specified to do so.
 
