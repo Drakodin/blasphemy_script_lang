@@ -56,6 +56,7 @@ Note that the .blsp file must be in the same directory as ```blsp-0.1.2.py```.
 I'm currently working on making a terminal command for Windows (and later Unix-based OS's with bash).
 
 <---**UPDATE**--->
+
 There exists one method to run Blasphemy Script on your computer, assuming Windows OS.
 1. Add an environment variable that points at the ```blsp-0.1.2.py``` file and name it "BLSP_MAIN".
 2. Add the directory to the batch file to your path or environment. Either one works.
