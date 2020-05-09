@@ -2,6 +2,11 @@ from lex import Lex as Lex;
 import os as os;
 lex_un = Lex()
 
+# Processes argument with extra carat char with no reason
+def process_in(in_file):
+    in_file_correct = in_file[1:]
+    return in_file_correct
+
 # Creates the file name of the output file
 # Outputs are in Java
 def gen_name(in_file):
@@ -12,11 +17,12 @@ def gen_name(in_file):
 
 # High complexity Interpreter, someone help
 def parse_file(in_file):
-    if (is_bsp(in_file) == False):
+    file_in = process_in(in_file)
+    if (is_bsp(file_in) == False):
         return 1
 
-    genned_name = gen_name(in_file)
-    with open(in_file, 'r') as file:
+    genned_name = gen_name(file_in)
+    with open(file_in, 'r') as file:
         build_struct(in_file)
         out_file = open(genned_name, 'a')
         
