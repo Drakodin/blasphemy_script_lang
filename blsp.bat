@@ -4,8 +4,9 @@ title blsp
 if "%1" == "--version" goto :version
 if "%1" == "--help" goto :help
 
-if "%1" == "" goto :end
-
+if "%1" == "" (
+    goto :help
+)
 :: Create an environment variable called "BLSP_MAIN" with the path to the blsp python file
 :: Then this function can run
 if defined BLSP_MAIN (
