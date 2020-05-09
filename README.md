@@ -11,8 +11,8 @@ There are resources that are either available now or in development for language
 **VERSION-UPDATES**
 - Version 0.1.0: Initial Copy
 - Version 0.1.1: Added function syntax
-- **Version 0.1.2**: Command line script for transcribing and compiling on JVM
-- *Version 0.1.2.1*: Batch commands that can be attached to Path. Requires that the location of the ```blsp-{version}.py``` be attached to path as "BLSP_MAIN". Attaching the folder containing the ```blsp.bat``` allows for the use of ```blsp <file_arg>``` globally.
+- Version 0.1.2: Command line script for transcribing and compiling on JVM
+- **Version 0.1.2.1**: Batch commands that can be attached to Path. Requires that the location of the ```blsp-{version}.py``` be attached to path as "BLSP_MAIN". Attaching the folder containing the ```blsp.bat``` allows for the use of ```blsp <file_arg>``` globally.
 - *Version 0.1.3*: Array structures, improved file recognition, additional lexicon mappings.
 
 **BLSP Resources**
@@ -55,7 +55,15 @@ Note that the .blsp file must be in the same directory as ```blsp-0.1.2.py```.
 
 I'm currently working on making a terminal command for Windows (and later Unix-based OS's with bash).
 
-The interpreter accepts either filenames or paths and will export the file to the same directory as the input unless otherwise specified to do so.
+<---**UPDATE**--->
+There exists one method to run Blasphemy Script on your computer, assuming Windows OS.
+1. Add an environment variable that points at the ```blsp-0.1.2.py``` file and name it "BLSP_MAIN".
+2. Add the directory to the batch file to your path or environment. Either one works.
+3. Calling "blsp" from the command line will now work. I suggest running ```blsp --help``` first.
+
+***Note:*** The command ```testcompile``` yields some odd error relating to subprocesses in Python. I am aware of this bug. Otherwise, the other defined functionality should be in working order.
+
+The exported file from the command line will appear in the directory in which the call was made from. Say if you had a file in ```C:\Temp```. Calling blsp to transcribe the file will make it appear in ```C:Temp```.
 
 ## Clarifications
 1. ">>>" is a semicolon, if you forget one of the ">", you will get an error in the generated file.
