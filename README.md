@@ -43,7 +43,7 @@ public class Test
 ## How do I run it
 Feed a file with the extension ".blsp" into the method into the interpreter. Note that the interpreter isn't the best thing in the world and will default to outputting raw text if the BLSP syntax is incorrect.
 
-For Windows users: Run the following command from cmd.exe from the "./lang" path 
+Run the following command from cmd.exe from the "./lang" path.
 
 ```python blsp-0.1.2.py <filename.blsp> <keyword>```
 
