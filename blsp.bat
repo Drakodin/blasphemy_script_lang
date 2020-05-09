@@ -49,7 +49,7 @@ goto :result
 
 :result
 echo.
-echo File generated: "sample.blsp -> Sample.java"
+echo Java file generated from %1
 echo.
 echo Task Executed.
 goto :end
