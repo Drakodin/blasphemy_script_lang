@@ -27,6 +27,7 @@ class Lex(dict):
         self["array_build"] = "[]"
         self["->"] = "."
         self["give"] = "return"
+        self["\\n"] = "\n"
 
     # Method to add to the language during operation, if preferred
     def add_to_lang(self, k, v):
