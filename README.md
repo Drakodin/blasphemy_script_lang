@@ -12,8 +12,9 @@ There are resources that are either available now or in development for language
 - Version 0.1.0: Initial Copy
 - Version 0.1.1: Added function syntax
 - Version 0.1.2: Command line script for transcribing and compiling on JVM
-- **Version 0.1.2.1**: Batch commands that can be attached to Path. Requires that the location of the ```blsp-{version}.py``` be attached to path as "BLSP_MAIN". Attaching the folder containing the ```blsp.bat``` allows for the use of ```blsp <file_arg>``` globally.
-- *Version 0.1.3*: Array structures, improved file recognition, additional lexicon mappings.
+- Version 0.1.2.1: Batch commands that can be attached to Path. Requires that the location of the ```blsp-{version}.py``` be attached to path as "BLSP_MAIN". Attaching the folder containing the ```blsp.bat``` allows for the use of ```blsp <file_arg>``` globally.
+- **Version 0.1.3**: Array structures, improved file recognition, additional lexicon mappings.
+- *Release 1.0.0*: Complete basic lexicon, fixed batch entry compilation and output. 
 
 **BLSP Resources**
 - *VS Marketplace Extension*: syntax coloration, some error checking.
@@ -26,10 +27,9 @@ Blasphemy Script (BLSP) has a really basic looking syntax, but some of the funct
 Well, for starters, there's the ```lex.py``` file if you're curious about what has been defined. Otherwise, below is a demo<br>
 *filename: test.blsp*
 ```
-open singular noret core
+open singular noret core start
 output [ 2 ] >>>
-<>
-stopcode
+end
 ```
 produces the following code (not spaced, but we all know Java isn't Python so it doesn't care)
 ```java
@@ -60,7 +60,7 @@ I'm currently working on making a terminal command for Windows (and later Unix-b
 There exists one method to run Blasphemy Script on your computer, assuming Windows OS.
 1. Add an environment variable that points at the ```blsp-0.1.2.py``` file and name it "BLSP_MAIN".
 2. Add the directory to the batch file to your path or environment. Either one works.
-3. Calling "blsp" from the command line will now work. I suggest running ```blsp --help``` first.
+3. Calling "blsp" will now default output "blsp --help".
 
 ***Note:*** The command ```testcompile``` yields some odd error relating to subprocesses in Python. I am aware of this bug. Otherwise, the other defined functionality should be in working order.
 
