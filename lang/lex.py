@@ -17,7 +17,8 @@ class Lex(dict):
         self["noret"] = "void"
         self["core"] = "main(String[] args)"
         self["start"] = "{ \n \t"
-        self["end"] = "\n}"
+        self["end"] = "}"
+        self["endfile"] = "\n}"
         self["output"] = "System.out.println"
         # Code Architecture
         self["#"] = ""
