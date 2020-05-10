@@ -57,7 +57,8 @@ goto :end
 
 
 :version
-echo Blasphemy Script 0.1.2.1
+echo Blasphemy Script Interpreter v0.1.2.1
+echo Blasphemy Script Language v0.1.3
 goto :end
 
 :help
