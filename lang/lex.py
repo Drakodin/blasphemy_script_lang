@@ -12,6 +12,7 @@ class Lex(dict):
         self["dec"] = "double"
         # Keywords and functions
         self["open"] = "public"
+        self["closed"] = "private"
         self["singular"] = "static"
         self["noret"] = "void"
         self["core"] = "main(String[] args)"
