@@ -10,6 +10,7 @@ class Lex(dict):
         self["num"] = "int"
         self["word"] = "String"
         self["dec"] = "double"
+        self["tf"] = "boolean"
         # Keywords and functions
         self["open"] = "public"
         self["closed"] = "private"
@@ -29,6 +30,8 @@ class Lex(dict):
         self["->"] = "."
         self["give"] = "return"
         self["\\n"] = "\n"
+        self["arr_open"] = "["
+        self["arr_close"] = "]"
 
     # Method to add to the language during operation, if preferred
     def add_to_lang(self, k, v):
