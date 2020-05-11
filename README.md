@@ -13,8 +13,8 @@ There are resources that are either available now or in development for language
 - Version 0.1.1: Added function syntax
 - Version 0.1.2: Command line script for transcribing and compiling on JVM
 - Version 0.1.2.1: Batch commands that can be attached to Path. Requires that the location of the ```blsp-{version}.py``` be attached to path as "BLSP_MAIN". Attaching the folder containing the ```blsp.bat``` allows for the use of ```blsp <file_arg>``` globally.
-- **Version 0.1.3**: Array structures, improved file recognition, additional lexicon mappings.
-- *Version 0.1.4*: Common utilities mappings, rewrite entry point to fit functionality better. Remove need for keyword arguments to Python base.
+- Version 0.1.3: Array structures, improved file recognition, additional lexicon mappings.
+- **Version 0.1.4: Common utilities mappings, rewrite entry point to fit functionality better. Remove need for keyword arguments to Python base.**
 - *Release 1.0.0*: Complete basic lexicon, fixed batch entry compilation and output. 
 
 **BLSP Resources**
