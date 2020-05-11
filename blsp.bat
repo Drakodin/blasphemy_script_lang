@@ -58,16 +58,16 @@ goto :jvm-call
 
 :: Calls the jvm attached to Path, whatever one comes first.
 :jvm-call
+::Routing to essentially remove .java file after compilation.
+if "%2" == "run" goto :run
+
 javac %jp%
 echo.
 rem Something about this line without quotes causes a "Bad Magic Number" error
 rem Therefore, quotes were added to avoid it. Reason: "CAFEBABE" missing.
-echo File compiled: "%fn%.java -> %fn%.class"
+echo File compiled: %fn%.java === %fn%.class
 echo.
 ping 127.0.0.1 -n 2 > nul
-
-::Routing to essentially remove .java file after compilation.
-if "%2" == "run" goto :run
 
 echo Executing...
 
@@ -75,6 +75,15 @@ java %fn%
 goto :result
 
 :run
+rem Reroute to give effect of actual compilation.
+javac %jp%
+ping 127.0.0.1 -n 2 > nul
+
+rem For some odd reason, these quotes are needed again unless it has to do with that arrow...
+echo.
+echo File compiled: %1 === %fn%.class
+echo.
+
 del /f %fn%.java
 echo Executing...
 java %fn%
