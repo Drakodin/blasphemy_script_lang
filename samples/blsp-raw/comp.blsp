@@ -1,0 +1,22 @@
+// # Fun fact, # comments # work # the # same # due # to # printing # of # unknown # tokens
+\n
+closed singular list_gen fun [ num array_build input ] start
+list_gen type=num list = util_build list_gen type=num [ ] >>>
+
+for [ num i = 0 >>> i < input -> length >>> i++ ] start
+list -> add [ input arr_open i arr_close ] >>>
+end
+
+give list >>>
+end
+
+open singular noret print_fun [ ] start
+num array_build numbers = start 0, 2, 4, 6, 8, 10 end >>>
+output [ "List: # " plus fun [ numbers ] ] >>>
+end
+
+open singular noret core start
+print_fun [ ] >>>
+end
+
+endfile
