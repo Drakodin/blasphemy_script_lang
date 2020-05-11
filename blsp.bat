@@ -53,7 +53,7 @@ for %%s in (A B C D E F G H I J K L M N O P Q R S T U V W X Y Z) do call set "c1
 set "fn=%c1%%fn:~1%"
 
 set "jp=%fn%%JAVA_EXT%"
-echo "Passing to JVM."
+echo Passing to JVM.
 
 goto :jvm-call
 
