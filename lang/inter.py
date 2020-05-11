@@ -35,6 +35,12 @@ def parse_file(in_file):
                     out_file.write(";")
                     continue
                 
+                # Creates "<>" values with keyword part of token
+                if (el.startswith("type=")):
+                    datatype = el[5:]
+                    out_file.write("<" + find_wrapper(datatype) + ">")
+                    continue
+
                 # Writes the code
                 if (lex_un.get(el) is not None):
                     # Checks for special function notations
@@ -61,5 +67,14 @@ def is_bsp(in_file):
     if (base.endswith(".blsp")):
         return True
     return False
+
+# Converts primitives, assuming utility requires objects
+def find_wrapper(datatype):
+    types = {
+        "num": "Integer",
+        "dec": "Double",
+        "tf": "Boolean"
+    }
+    return types.get(datatype)
 
                 

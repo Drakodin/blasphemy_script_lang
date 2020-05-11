@@ -6,11 +6,13 @@ class Lex(dict):
         self["mult"] = "*"
         self["divi"] = "/"
         self["imod"] = "%"
-        # Datatypes
+        
+        # Primitive Datatypes
         self["num"] = "int"
         self["word"] = "String"
         self["dec"] = "double"
         self["tf"] = "boolean"
+        
         # Keywords and functions
         self["open"] = "public"
         self["closed"] = "private"
@@ -21,10 +23,12 @@ class Lex(dict):
         self["end"] = "}"
         self["endfile"] = "\n}"
         self["output"] = "System.out.println"
+        
         # Code Architecture
         self["#"] = ""
         self["["] = "("
         self["]"] = ")"
+        
         # Version .3 Architecture
         self["array_build"] = "[]"
         self["->"] = "."
@@ -32,6 +36,10 @@ class Lex(dict):
         self["\\n"] = "\n"
         self["arr_open"] = "["
         self["arr_close"] = "]"
+        
+        # Version .4
+        self["list_gen"] = "java.util.ArrayList"
+        self["util_build"] = "new"
 
     # Method to add to the language during operation, if preferred
     def add_to_lang(self, k, v):
