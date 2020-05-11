@@ -64,7 +64,7 @@ if "%2" == "run" goto :run
 javac %jp%
 echo.
 rem Something about this line without quotes causes a "Bad Magic Number" error
-rem Therefore, quotes were added to avoid it. Reason: "CAFEBABE" missing.
+rem It was the arrow.
 echo File compiled: %fn%.java === %fn%.class
 echo.
 ping 127.0.0.1 -n 2 > nul
@@ -79,7 +79,7 @@ rem Reroute to give effect of actual compilation.
 javac %jp%
 ping 127.0.0.1 -n 2 > nul
 
-rem For some odd reason, these quotes are needed again unless it has to do with that arrow...
+rem It was the arrow.
 echo.
 echo File compiled: %1 === %fn%.class
 echo.
