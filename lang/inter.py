@@ -4,8 +4,11 @@ lex_un = Lex()
 
 # Processes argument with extra carat char with no reason
 def process_in(in_file):
-    in_file_correct = in_file[1:]
-    return in_file_correct
+    if (in_file.startswith("^")):
+        in_file_correct = in_file[1:]
+        return in_file_correct
+    else:
+        return in_file
 
 # Creates the file name of the output file
 # Outputs are in Java
