@@ -1,6 +1,9 @@
-# blasphemy_script_lang
-Odd interpreted language that is transcribed into Java before execution. It is read on a token by token basis and thus all files will appear with spaces between all forms of syntax.
+# Blasphemy Script (BLSP)
+An interpreted language developed using Python 3.7.2 that maps to Java source code up to (as far as I know) JDK 11.
 
+Though effectively, it can be the latest version since any object that has methods, when called in BLSP, uses the same name as Java.
+
+## Updates and Plans
 There are resources that are either available now or in development for language use. To separate what is considered old, current, and planned, below is a key.
 |font-format | details         |
 |:-----------|:----------------|
@@ -19,10 +22,10 @@ There are resources that are either available now or in development for language
 
 **BLSP Resources**
 - *VS Marketplace Extension*: syntax coloration, some error checking.
-- *BLSP Guide*: website with tutorials as well as documentation
+- **BLSP Guide:** [Wiki](https://github.com/Drakodin/blasphemy_script_lang/wiki)
 
 ## What is this?
-Blasphemy Script (BLSP) has a really basic looking syntax, but some of the functions for outputs make no sense at first. In fact, most files written in BLSP have no real programming language-esque structure aside from the necessity of standard strings ("...").
+In more detail, this is an interpreted programming language. What is that? An interpreted language refers to one where the syntax is readily executed, or one that does not compile into instructions. Technically, this language is "compiled" into Java, but it doesn't compile into VM Bytecode or Assembly (though one command can effectively compile it into JVM Bytecode, just not directly).
 
 ## What does it look like?
 *filename: test.blsp*
