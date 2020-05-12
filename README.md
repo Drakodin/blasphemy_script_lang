@@ -22,7 +22,7 @@ There are resources that are either available now or in development for language
 - *BLSP Guide*: website with tutorials as well as documentation
 
 ## What is this?
-Blasphemy Script (BLSP) has a really basic looking syntax, but some of the functions for outputs make no sense at first. In fact, most files written in BLSP have no real programming language-esque structure aside from the necessity of standard strings ("..."). Although, with how many words are involved, it's obvious this is based on Java.
+Blasphemy Script (BLSP) has a really basic looking syntax, but some of the functions for outputs make no sense at first. In fact, most files written in BLSP have no real programming language-esque structure aside from the necessity of standard strings ("...").
 
 ## What does it look like?
 *filename: test.blsp*
@@ -60,11 +60,9 @@ The only function available is the equivalent of calling ```blsp <file_name> exp
 * Compilation shows proper file names
 * Again, the generated Java source and class files will appear in the same directory as the BLSP source file.
 
-## Clarifications
-1. ">>>" is a semicolon, if you forget one of the ">", you will get an error in the generated file.
-2. The transcripted file doesn't care about Java style. All it cares about is functionality.
-3. It doesn't matter how your BLSP file is formatted, just as long as each component has a space in between as the interpreter breaks by singular whitespace characters.
-4. You must end every file with "endfile". It calls the final brace for Java generation of classes.
+## Additional Notes
+* See the Wiki for documentation and more detailed information.
+
 # References
 - Python 3.7
 - Java SE 8
